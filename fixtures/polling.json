@@ -1,0 +1,14 @@
+{
+  "_source": "Shaped on the PollingWebhook type in docs.agentmail.to/api-reference/webhooks/polling/list.md (2026-11-16). Synthetic: the live org had 0 polling webhooks. Polling webhooks have no enabled field.",
+  "received_only": {
+    "webhook_id": "pw_received_only", "client_id": "support-agent",
+    "event_types": ["message.received"],
+    "updated_at": "2026-11-15T10:00:00Z", "created_at": "2026-11-15T10:00:00Z",
+    "inbox_ids": ["why-no-reply-test@agentmail.to"]
+  },
+  "spam_and_blocked": {
+    "webhook_id": "pw_variants", "client_id": "triage-agent",
+    "event_types": ["message.received.spam", "message.received.blocked"],
+    "updated_at": "2026-11-15T10:00:00Z", "created_at": "2026-11-15T10:00:00Z"
+  }
+}

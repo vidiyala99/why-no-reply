@@ -1,0 +1,46 @@
+{
+  "_source": "Shaped on the Webhook type in docs.agentmail.to/api-reference/webhooks/list.md (2026-11-16). Synthetic: the live org had 0 webhooks. secret is a canary that must never be printed.",
+  "received_only": {
+    "webhook_id": "wh_received_only", "url": "https://agent.example.com/hooks/agentmail?t=URLTOKEN_CANARY",
+    "secret": "whsec_CANARY_DO_NOT_PRINT", "enabled": true,
+    "updated_at": "2026-11-16T10:00:00Z", "created_at": "2026-11-16T10:00:00Z",
+    "event_types": ["message.received"]
+  },
+  "all_variants_disabled": {
+    "webhook_id": "wh_all_disabled", "url": "https://agent.example.com/hooks/all",
+    "secret": "whsec_CANARY_DO_NOT_PRINT", "enabled": false,
+    "updated_at": "2026-11-16T19:47:00Z", "created_at": "2026-11-01T10:00:00Z",
+    "event_types": ["message.received", "message.received.spam", "message.received.blocked", "message.received.unauthenticated"]
+  },
+  "all_variants_inbox": {
+    "webhook_id": "wh_inbox_all", "url": "https://agent.example.com/hooks/inbox",
+    "secret": "whsec_CANARY_DO_NOT_PRINT", "enabled": true,
+    "updated_at": "2026-11-10T10:00:00Z", "created_at": "2026-11-10T10:00:00Z",
+    "event_types": ["message.received", "message.received.spam", "message.received.blocked", "message.received.unauthenticated", "message.security.review"],
+    "inbox_ids": ["why-no-reply-test@agentmail.to"], "inbox_id": "why-no-reply-test@agentmail.to", "pod_id": "pod_default_0001"
+  },
+  "other_inbox": {
+    "webhook_id": "wh_other_inbox", "url": "https://agent.example.com/hooks/other",
+    "secret": "whsec_CANARY_DO_NOT_PRINT", "enabled": true,
+    "updated_at": "2026-11-10T10:00:00Z", "created_at": "2026-11-10T10:00:00Z",
+    "event_types": ["message.received"], "inbox_ids": ["orbit-followups@agentmail.to"]
+  },
+  "other_pod": {
+    "webhook_id": "wh_other_pod", "url": "https://agent.example.com/hooks/pod",
+    "secret": "whsec_CANARY_DO_NOT_PRINT", "enabled": true,
+    "updated_at": "2026-11-10T10:00:00Z", "created_at": "2026-11-10T10:00:00Z",
+    "event_types": ["message.received"], "pod_ids": ["pod_elsewhere"], "pod_id": "pod_elsewhere"
+  },
+  "pod_scoped": {
+    "webhook_id": "wh_pod", "url": "https://agent.example.com/hooks/pod",
+    "secret": "whsec_CANARY_DO_NOT_PRINT", "enabled": true,
+    "updated_at": "2026-11-10T10:00:00Z", "created_at": "2026-11-10T10:00:00Z",
+    "event_types": ["message.received"], "pod_id": "pod_default_0001"
+  },
+  "late_created": {
+    "webhook_id": "wh_late", "url": "https://agent.example.com/hooks/late",
+    "secret": "whsec_CANARY_DO_NOT_PRINT", "enabled": true,
+    "updated_at": "2026-11-16T20:00:00Z", "created_at": "2026-11-16T20:00:00Z",
+    "event_types": ["message.received", "message.received.spam", "message.received.blocked"]
+  }
+}

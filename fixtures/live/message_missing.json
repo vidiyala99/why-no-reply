@@ -1,0 +1,10 @@
+{
+  "status": 404,
+  "body": {
+    "name": "NotFoundError",
+    "code": "not_found",
+    "message": "Message not found",
+    "fix": "No message with the given identifier is visible to this credential. Check the id, that your credential's scope (organization, pod, or inbox) covers the resource, and that you hold the required read permissions — some resources (e.g. restricted labels like spam or trash) are hidden without their label-read permission. The corresponding list endpoint returns only the ids visible to you.",
+    "docs": "https://docs.agentmail.to/errors#not_found"
+  }
+}

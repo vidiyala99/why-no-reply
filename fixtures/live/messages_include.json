@@ -1,0 +1,71 @@
+{
+  "status": 200,
+  "body": {
+    "count": 3,
+    "limit": 50,
+    "messages": [
+      {
+        "pod_id": "pod_default_0001",
+        "inbox_id": "why-no-reply-test@agentmail.to",
+        "thread_id": "43d16289-40c4-4a01-ab60-c91e8fd8a928",
+        "message_id": "<010001a1e5e59d4e-d51a0807-30e3-44d7-9c94-3fc9b15ba48f-000000@email.amazonses.com>",
+        "labels": [
+          "received",
+          "unread"
+        ],
+        "timestamp": "2026-11-16T19:46:32.000Z",
+        "from": "Orbit Follow-ups <orbit-followups@agentmail.to>",
+        "to": [
+          "why-no-reply-test@agentmail.to"
+        ],
+        "subject": "[194630] normal",
+        "preview": "Plain test message from my own inbox. Please ignore.\n\n--\nSent via AgentMail",
+        "size": 4688,
+        "updated_at": "2026-11-16T19:46:33.188Z",
+        "created_at": "2026-11-16T19:46:33.188Z"
+      },
+      {
+        "pod_id": "pod_default_0001",
+        "inbox_id": "why-no-reply-test@agentmail.to",
+        "thread_id": "380fd65f-8840-40b8-8000-5f6574928e5c",
+        "message_id": "<010001a1e5e5ee07-975c0fab-c326-49b9-94df-3c51316c141c-000000@email.amazonses.com>",
+        "labels": [
+          "received",
+          "unread",
+          "spam"
+        ],
+        "timestamp": "2026-11-16T19:46:53.000Z",
+        "from": "Orbit Follow-ups <orbit-followups@agentmail.to>",
+        "to": [
+          "why-no-reply-test@agentmail.to"
+        ],
+        "subject": "[194630] spam-gtube",
+        "preview": "XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X\n\n--\nSent via AgentMail",
+        "size": 4724,
+        "updated_at": "2026-11-16T19:46:53.908Z",
+        "created_at": "2026-11-16T19:46:53.908Z"
+      },
+      {
+        "pod_id": "pod_default_0001",
+        "inbox_id": "why-no-reply-test@agentmail.to",
+        "thread_id": "efdd25d6-3d1c-43c6-a12e-a5c8fd3fdb47",
+        "message_id": "<010001a1e5e64103-203a154d-9e10-4703-9eea-284b1446501e-000000@email.amazonses.com>",
+        "labels": [
+          "received",
+          "unread",
+          "blocked"
+        ],
+        "timestamp": "2026-11-16T19:47:14.000Z",
+        "from": "Orbit Follow-ups <orbit-followups@agentmail.to>",
+        "to": [
+          "why-no-reply-test@agentmail.to"
+        ],
+        "subject": "[194630] blocked-sender",
+        "preview": "Test message while my own sender address is on the block list.\n\n--\nSent via AgentMail",
+        "size": 4716,
+        "updated_at": "2026-11-16T19:47:15.147Z",
+        "created_at": "2026-11-16T19:47:15.147Z"
+      }
+    ]
+  }
+}

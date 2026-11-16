@@ -1,0 +1,27 @@
+{
+  "status": 200,
+  "body": {
+    "message.received": [
+      {
+        "timestamp": "2026-11-16T20:07:20.859Z",
+        "count": 3
+      }
+    ],
+    "message.received.spam": [],
+    "message.received.blocked": [],
+    "message.received.unauthenticated": [],
+    "message.sent": [],
+    "message.delivered": [],
+    "message.bounced": [],
+    "message.complained": [],
+    "message.rejected": [],
+    "message.opened": [],
+    "domain.verified": [],
+    "calendar.event.created": [],
+    "calendar.event.updated": [],
+    "calendar.event.deleted": [],
+    "calendar.event.starting": [],
+    "calendar.event.ending": [],
+    "calendar.event.responded": []
+  }
+}

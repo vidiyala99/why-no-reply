@@ -1,0 +1,11 @@
+# node --env-file=.env src/cli.ts --inbox why-no-reply-test@agentmail.to --since 2026-11-16T19:40:00Z  (run 20261116T201646Z, read-only GETs, own org)
+NOT-OK  why-no-reply  inbox=why-no-reply-test@agentmail.to  window=2026-11-16T19:40:00.000Z..2026-11-16T20:16:46.391Z  messages=3  no-subscriber=3
+NO-SUBSCRIBER  2026-11-16T19:46:33Z  "[194630] normal"  Fires message.received. No webhook or polling webhook covered this inbox when it arrived; a WebSocket may have been listening (not visible through the API).  [webhooks-overview.md#recovering-missed-events, websockets.md]
+NO-SUBSCRIBER  2026-11-16T19:46:53Z  "[194630] spam-gtube"  labels=spam  Fires message.received.spam. No webhook or polling webhook covered this inbox when it arrived; a WebSocket may have been listening (not visible through the API). Labeled spam: it never fires message.received, so a message.received-only setup (webhook, polling webhook or WebSocket) misses it (reproduced live 2026-11-16). Also left out of the default message list (needs include_spam=true).  [webhooks-overview.md#recovering-missed-events, websockets.md]
+NO-SUBSCRIBER  2026-11-16T19:47:15Z  "[194630] blocked-sender"  labels=blocked  Fires message.received.blocked. No webhook or polling webhook covered this inbox when it arrived; a WebSocket may have been listening (not visible through the API). Labeled blocked: it never fires message.received, so a message.received-only setup (webhook, polling webhook or WebSocket) misses it (reproduced live 2026-11-16). Also left out of the default message list (needs include_blocked=true).  [webhooks-overview.md#recovering-missed-events, websockets.md]
+
+setup:
+  inbox why-no-reply-test@agentmail.to (pod <pod id redacted>)
+  no webhook, polling webhook or WebSocket subscriber found. WebSocket subscriptions are not visible through the API, so one may still be listening; a WebSocket naming only message.received misses spam, blocked and unauthenticated mail.
+  catch up: GET /v0/inboxes/why-no-reply-test%40agentmail.to/messages?after=2026-11-16T19:46:32Z&ascending=true&include_spam=true&include_blocked=true&include_unauthenticated=true (or after= the last event your agent processed, if earlier); skip messages already handled by matching inbox_id + message_id, not message_id alone.
+# exit 1

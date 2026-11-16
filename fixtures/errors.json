@@ -1,0 +1,5 @@
+{
+  "_source": "Shaped on docs.agentmail.to/errors.md (missing_permission, unauthorized) and the live 404 body in live/message_missing.json.",
+  "missing_permission": { "status": 403, "body": { "name": "ForbiddenError", "code": "missing_permission", "message": "Forbidden", "fix": "Retry with a key that includes the permission.", "docs": "https://docs.agentmail.to/errors#missing_permission" } },
+  "unauthorized": { "status": 401, "body": { "name": "UnauthorizedError", "code": "unauthorized", "message": "Unauthorized" } }
+}
